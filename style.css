@@ -1,0 +1,24 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #f8f8f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #e0efe0;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+main {
+    padding: 1.5rem;
+}
+section {
+    margin-bottom: 2rem;
+}
+footer {
+    background-color: #d0e0d0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
