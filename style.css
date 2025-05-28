@@ -2,8 +2,7 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
     background-color: #f8f8f5;
     color: #333;
-    margin: 0;
-    padding: 0;
+  　line-height: 1.8;
 }
 header {
     background-color: #e0efe0;
@@ -21,4 +20,13 @@ footer {
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
+}
+.site-title {
+  font-size: 2.5rem;
+  color: #4a7c59;
+  margin-bottom: 0.5rem;
+}
+.lead {
+  font-size: 1.2rem;
+  color: #666;
 }
