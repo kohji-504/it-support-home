@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>やさしいITサポート</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>やさしいITサポート</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1 class="site-title">やさしいITサポート</h1>
-        <p class="lead">自然体で相談できる、あなたのITパートナー</p>
-    </header>
-    <main>
-        <section>
-            <h2>できること</h2>
-            <ul>
-                <li>Googleスプレッドシートでの業務効率化</li>
-                <li>フォームや自動化の導入支援</li>
-                <li>小規模ホームページの構築支援</li>
-                <li>スマホやアプリの使い方レクチャー</li>
-            </ul>
-        </section>
-        <section>
-            <h2>お問い合わせ</h2>
-            <p>お気軽にご相談ください。</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 やさしいITサポート</p>
-    </footer>
+<body class="bg-stone-50 text-stone-800 font-sans">
+  <header class="bg-stone-200 p-4 shadow">
+    <div class="max-w-3xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">やさしいITサポート</h1>
+      <nav>
+        <ul class="flex gap-4 text-sm">
+          <li><a href="index.html" class="hover:underline">ホーム</a></li>
+          <li><a href="works.html" class="hover:underline">実績</a></li>
+          <li><a href="learning.html" class="hover:underline">学習メモ</a></li>
+          <li><a href="contact.html" class="hover:underline">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto p-6 space-y-6">
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">こんにちは</h2>
+      <p>やさしいITサポートへようこそ。個人で活動しているITサポーターです。<br>
+        小さな会社やお店、個人事業主の方が抱える「ちょっと困ったITのこと」を、やさしく・丁寧にサポートしています。
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold mt-6 mb-2">こんなことをしています</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Google スプレッドシートやフォームを使った業務効率化</li>
+        <li>Flask や Python を活用したシステムの簡易構築</li>
+        <li>ホームページやポートフォリオサイトの作成支援</li>
+        <li>クライアントとのやりとりや見積・管理の仕組みづくり</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bg-stone-200 text-sm text-center p-4 mt-12">
+    <p>&copy; 2025 やさしいITサポート</p>
+  </footer>
 </body>
 </html>
