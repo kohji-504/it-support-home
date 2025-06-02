@@ -4,92 +4,108 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>やさしいITサポート</title>
-  <!-- OGP基本 -->
+
+  <!-- OGP -->
   <meta property="og:title" content="やさしいITサポート" />
   <meta property="og:description" content="小さなチームに、やさしいITの力を。" />
   <meta property="og:image" content="https://yasashii-it.com/assets/ogp.png" />
   <meta property="og:url" content="https://yasashii-it.com/" />
   <meta property="og:type" content="website" />
-
-  <!-- Twitter用 -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="やさしいITサポート" />
   <meta name="twitter:description" content="小さなチームに、やさしいITの力を。" />
   <meta name="twitter:image" content="https://yasashii-it.com/assets/ogp.png" />
 
-
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-stone-50 text-stone-800 font-sans">
+<body class="bg-stone-50 text-stone-800 font-sans leading-relaxed">
 
-  <section class="relative">
-    <img src="assets/top-hero.png" alt="やさしいITサポート トップイメージ"
-         class="w-full h-64 sm:h-80 object-cover rounded-b-lg shadow-sm">
-    <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-white text-center px-4">
-      <h2 class="text-2xl sm:text-3xl font-bold drop-shadow mb-3">
-        小さなチームに、やさしいITの力を。
-      </h2>
-      <div class="flex items-center gap-2 text-sm sm:text-base drop-shadow-sm">
-        <span class="bg-white bg-opacity-80 text-stone-800 font-bold rounded-md px-2 py-1 text-base sm:text-lg shadow-sm">
-          や
-        </span>
-        <span class="text-white/90 tracking-wide">yasashii-it.com</span>
-      </div>
-    </div>
-  </section>
-
-  <header class="bg-stone-200 p-4 shadow">
+  <!-- ✅ 固定ナビゲーションバー（ハンバーガーメニュー対応） -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-stone-200 bg-opacity-90 backdrop-blur p-4 shadow">
     <div class="max-w-3xl mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">やさしいITサポート</h1>
-      <nav>
-        <ul class="flex gap-4 text-sm">
-          <li><a href="index.html" class="hover:underline">ホーム</a></li>
-          <li><a href="works.html" class="hover:underline">実績</a></li>
-          <li><a href="learning.html" class="hover:underline">学習メモ</a></li>
-          <li><a href="contact.html" class="hover:underline">お問い合わせ</a></li>
-        </ul>
-      </nav>
+      <h1 class="text-lg sm:text-xl font-bold text-brown-800">やさしいITサポート</h1>
+
+      <!-- ハンバーガーアイコン（スマホ用） -->
+      <button id="menu-toggle" class="block sm:hidden text-stone-700 focus:outline-none text-2xl">
+        ☰
+      </button>
+
+<nav id="nav-menu"
+     class="hidden sm:flex flex-col sm:flex-row gap-y-3 sm:gap-y-0 gap-x-0 sm:gap-x-0 text-sm
+            absolute sm:static top-16 right-4 sm:left-auto
+            bg-stone-100 sm:bg-transparent py-4 sm:py-0 rounded sm:rounded-none
+            shadow sm:shadow-none w-max px-0">
+  <a href="index.html" class="block hover:underline font-semibold text-brown-700 px-4">ホーム</a>
+  <a href="works.html" class="block hover:underline px-4">実績</a>
+  <a href="learning.html" class="block hover:underline px-4">学習メモ</a>
+  <a href="contact.html" class="block hover:underline px-4">お問い合わせ</a>
+</nav>
+
     </div>
   </header>
 
-  <main class="max-w-3xl mx-auto px-4 py-12 space-y-8">
-
-    <!-- セクション1：あいさつ -->
-    <section class="bg-white p-6 rounded shadow-sm">
-      <h2 class="text-2xl font-bold text-brown-700 mb-3">やさしいITサポートへようこそ</h2>
-      <p class="text-stone-700 text-base leading-relaxed">
-        個人で活動する ITサポーターとして、<br>
-        小さな会社やお店、個人事業主の方が抱える「ちょっと困ったITのこと」を、<br>
-        やさしく・丁寧にサポートしています。
-      </p>
+  <!-- ✅ トップ画像セクション -->
+  <main>
+    <section class="relative pt-20">
+      <img src="assets/top-hero.png" alt="やさしいITサポート トップ画像"
+           class="w-full h-56 sm:h-72 md:h-96 object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-white text-center px-4 sm:px-8">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold drop-shadow mb-3">
+          小さなチームに、<br class="hidden sm:block">やさしいITの力を。
+        </h2>
+        <div class="flex items-center gap-2 text-sm sm:text-base drop-shadow-sm">
+          <span class="bg-white bg-opacity-80 text-stone-800 font-bold rounded-md px-2 py-1">や</span>
+          <span class="text-white/90 tracking-wide">yasashii-it.com</span>
+        </div>
+      </div>
     </section>
 
-    <!-- セクション2：サービス紹介 -->
-    <section class="bg-white p-6 rounded shadow-sm">
-      <h2 class="text-xl font-semibold text-brown-800 mb-4">💡 提供しているサポート内容</h2>
-      <ul class="list-disc list-inside text-stone-700 space-y-2 text-sm">
-        <li>Google スプレッドシートやフォームを使った業務効率化</li>
-        <li>Flask や Python を活用したシステムの簡易構築</li>
-        <li>ホームページやポートフォリオサイトの作成支援</li>
-        <li>クライアントとのやりとりや見積・管理の仕組みづくり</li>
-      </ul>
-    </section>
+    <!-- ✅ 本文エリア -->
+    <section class="pt-12 px-4 max-w-3xl mx-auto space-y-8">
 
-    <!-- セクション3：実績へのリンク -->
-    <section class="bg-white p-6 rounded shadow-sm">
-      <h2 class="text-xl font-semibold text-brown-800 mb-4">📁 実績紹介・学習記録</h2>
-      <ul class="list-disc list-inside text-sm text-stone-700 space-y-1">
-        <li><a href="works.html" class="text-blue-600 underline hover:text-blue-800">実績一覧を見る</a></li>
-        <li><a href="learning.html" class="text-blue-600 underline hover:text-blue-800">学習メモを見る</a></li>
-      </ul>
-    </section>
+      <div class="bg-white p-6 rounded shadow-sm">
+        <h2 class="text-xl sm:text-2xl font-bold text-brown-700 mb-3">やさしいITサポートへようこそ</h2>
+        <p class="text-sm sm:text-base text-stone-700 leading-relaxed">
+          小さな会社やお店、個人事業主の方が抱える<br class="hidden sm:inline">
+          「ちょっと困ったITのこと」を、やさしく・丁寧にサポートしています。
+        </p>
+      </div>
 
+      <div class="bg-white p-6 rounded shadow-sm">
+        <h2 class="text-lg sm:text-xl font-semibold text-brown-800 mb-4">💡 提供しているサポート内容</h2>
+        <ul class="list-disc list-inside text-sm sm:text-base text-stone-700 space-y-2">
+          <li>Google スプレッドシートやフォームを使った業務効率化</li>
+          <li>Flask や Python を活用したシステムの簡易構築</li>
+          <li>ホームページやポートフォリオサイトの作成支援</li>
+          <li>クライアントとのやりとりや見積・管理の仕組みづくり</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow-sm">
+        <h2 class="text-lg sm:text-xl font-semibold text-brown-800 mb-4">📁 実績紹介・学習記録</h2>
+        <ul class="list-disc list-inside text-sm sm:text-base text-stone-700 space-y-1">
+          <li><a href="works.html" class="text-blue-600 underline hover:text-blue-800">実績一覧を見る</a></li>
+          <li><a href="learning.html" class="text-blue-600 underline hover:text-blue-800">学習メモを見る</a></li>
+        </ul>
+      </div>
+    </section>
   </main>
 
-
-  <footer class="bg-stone-200 text-sm text-center p-4 mt-12">
-    <p>&copy; 2025 やさしいITサポート</p>
+  <!-- ✅ フッター -->
+  <footer class="bg-stone-200 text-sm text-center text-stone-600 py-6 mt-12">
+    &copy; 2025 やさしいITサポート
   </footer>
+
+  <!-- ✅ ハンバーガーメニュー開閉スクリプト -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    toggleBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+    });
+  </script>
+
 </body>
 </html>
